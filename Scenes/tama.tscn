@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cedmrhvpio0iu"]
+
+[ext_resource type="Script" uid="uid://b2piefow50a8n" path="res://Scripts/Tama.cs" id="1_oup6k"]
+[ext_resource type="Texture2D" uid="uid://b44dqqqfkad0w" path="res://Assets/Sprites/axclotal1.0single.png" id="2_oqlgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u61q2"]
+size = Vector2(14, 14)
+
+[node name="Tama" type="Area2D" unique_id=364401651]
+script = ExtResource("1_oup6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=724944774]
+shape = SubResource("RectangleShape2D_u61q2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1553234417]
+texture = ExtResource("2_oqlgb")
+
+[node name="BahaviorTimeout" type="Timer" parent="." unique_id=1632182255]
+one_shot = true
