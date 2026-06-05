@@ -15,9 +15,9 @@ public enum MindsetState
 public partial class Tama : Area2D
 {
 
-    private Sprite2D Sprite2D;
-    private Timer BehaviorTimer;
-    private MindsetState currentMindset = MindsetState.Wander;
+	private Sprite2D Sprite2D;
+	private Timer BehaviorTimer;
+	private MindsetState currentMindset = MindsetState.Wander;
 
 	public override void _Ready()
 	{
